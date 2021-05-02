@@ -4,6 +4,7 @@ import 'package:brktrk/menu/mainMenu.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 import 'package:provider/provider.dart';
 // ignore: must_be_immutable
 class Home extends StatelessWidget {
@@ -30,6 +31,7 @@ class Home extends StatelessWidget {
                 //icon: SvgPicture.asset('assets/menu.svg'),
                 color: backgroundColor,
                 iconSize: 30,
+                icon: Icon(Ionicons.md_menu),
                 onSelected: choiceAction,
                 itemBuilder: (BuildContext context) {
                   return MainMenu.menu.map((choice) {
@@ -76,6 +78,12 @@ class Home extends StatelessWidget {
     switch (choice) {
       case "Portfolio":
         Navigator.pushNamed(_context, '/portfolio');
+        break;
+      case "About":
+        Navigator.pushNamed(_context, '/about');
+        break;
+      case "Resume":
+        Navigator.pushNamed(_context, '/resume');
         break;
     }
   }

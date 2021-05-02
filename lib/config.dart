@@ -55,11 +55,9 @@ class Config with ChangeNotifier {
     tabs.add(Tab(text: "All"));
     for (var item in defaultApi.portfolioCategories) {
       tabs.add(Tab(text: item.categoryName));
-      print(item.categoryName);
     }
     return tabs;
   }
-
   List<Container> subTabMaker(context) {
     List<Container>? tabs = [];
     tabs.clear();
@@ -71,7 +69,6 @@ class Config with ChangeNotifier {
             primary: false,
             scrollDirection: Axis.vertical,
             shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
             padding: const EdgeInsets.all(20),
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 2,
@@ -106,7 +103,6 @@ class Config with ChangeNotifier {
         Container(
           child: GridView.builder(
               primary: false,
-              physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
               padding: const EdgeInsets.all(20),
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

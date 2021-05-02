@@ -1,6 +1,8 @@
 import 'package:brktrk/constants.dart';
+import 'package:brktrk/features/home/view/about.dart';
 import 'package:brktrk/features/home/view/home.dart';
 import 'package:brktrk/features/home/view/portfolio.dart';
+import 'package:brktrk/features/home/view/resume.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -45,6 +47,8 @@ class MyApp extends StatelessWidget {
         routes: {
           "/": (context) => Home(),
           "/portfolio": (context) => Portfolio(),
+          "/about": (context) => About(),
+          "/resume": (context) => Resume(),
         },
       ),
     );
