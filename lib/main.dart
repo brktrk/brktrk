@@ -1,6 +1,8 @@
 import 'package:brktrk/constants.dart';
 import 'package:brktrk/features/home/view/about.dart';
+import 'package:brktrk/features/home/view/contact.dart';
 import 'package:brktrk/features/home/view/home.dart';
+import 'package:brktrk/features/home/view/loading.dart';
 import 'package:brktrk/features/home/view/portfolio.dart';
 import 'package:brktrk/features/home/view/resume.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +14,7 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     systemNavigationBarColor: backgroundColor,
-    statusBarColor: backgroundColor,
+    statusBarColor: Colors.black,
     statusBarBrightness: Brightness.light,
     statusBarIconBrightness: Brightness.light,
   ));
@@ -43,12 +45,14 @@ class MyApp extends StatelessWidget {
           fontFamily: 'Poppins-Regular',
           primaryColor: backgroundColor,
         ),
-        initialRoute: '/',
+        initialRoute: '/loading',
         routes: {
+          "/loading": (context) => Loading(),
           "/": (context) => Home(),
-          "/portfolio": (context) => Portfolio(),
+          "/portfolio": (context) => PortfolioPage(),
           "/about": (context) => About(),
           "/resume": (context) => Resume(),
+          "/contact": (context) => Contact(),
         },
       ),
     );

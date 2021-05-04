@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 // ignore: must_be_immutable
 class Resume extends StatelessWidget {
+  // ignore: non_constant_identifier_names
   var description, title, education, experience, skill_description, skill_title;
 
   @override
@@ -48,21 +49,8 @@ class Resume extends StatelessWidget {
       backgroundColor: backgroundColor,
       body: Stack(
         children: [
-          Positioned(
-            top: 50,
-            right: 20,
-            child: SizedBox(
-              child: IconButton(
-                  icon: const Icon(
-                    Icons.close,
-                    color: Colors.white,
-                  ),
-                  onPressed: () {
-                    Navigator.pop(context);
-                  }),
-            ),
-          ),
           SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
             scrollDirection: Axis.vertical,
             child: Center(
                 child: Column(
@@ -402,6 +390,20 @@ class Resume extends StatelessWidget {
               ],
             )),
           ),
+          Positioned(
+            top: 50,
+            right: 20,
+            child: SizedBox(
+              child: IconButton(
+                  icon: const Icon(
+                    Icons.close,
+                    color: Colors.white,
+                  ),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  }),
+            ),
+          )
         ],
       ),
     );

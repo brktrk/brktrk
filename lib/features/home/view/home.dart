@@ -4,6 +4,7 @@ import 'package:brktrk/menu/mainMenu.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/services.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:provider/provider.dart';
 // ignore: must_be_immutable
@@ -13,13 +14,13 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final config = Provider.of<Config>(context, listen: true);
-    config.getHttp();
     _context = context;
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.black,
           brightness: Brightness.dark,
           titleSpacing: 40,
+          automaticallyImplyLeading: false,
           title: Image.asset(
             'assets/brktrk.png',
             fit: BoxFit.cover,
@@ -84,6 +85,9 @@ class Home extends StatelessWidget {
         break;
       case "Resume":
         Navigator.pushNamed(_context, '/resume');
+        break;
+      case "Contact":
+        Navigator.pushNamed(_context, '/contact');
         break;
     }
   }

@@ -1,4 +1,4 @@
-package com.example.brktrk
+package com.brktrk
 
 import io.flutter.embedding.android.FlutterActivity
 
