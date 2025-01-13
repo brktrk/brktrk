@@ -12,27 +12,6 @@ With a sharp eye for product evolution, I prioritize tasks, iterate quickly, and
 - **Email**: [me@brktrk.com](mailto:me@brktrk.com)
 - **Address**: Trabzon, Turkey
 
-## Social Links
-
-You can connect with me through the following platforms:
-
-- [Facebook](https://www.facebook.com/burakturkofficial)
-- [Twitter](https://twitter.com/brktrkofficial)
-- [Instagram](https://www.instagram.com/brktrkcom)
-- [LinkedIn](https://www.linkedin.com/in/brktrk)
-- [Behance](https://www.behance.net/)
-- [Dribbble](https://dribbble.com/)
-- [Medium](https://medium.com/)
-- [GitHub](https://github.com/brktrk)
-
-## Download My CV
-
-If you are interested in learning more about my work experience and skills, feel free to download my CV:
-
-- [Download CV](./download/cv-brktrk.pdf)
-
 ## Let's Work Together!
 
 Feel free to reach out to me anytime for collaboration or inquiries. Let's bring your ideas to life!
-
-[Contact Me](#) (Modal link for contact form)
